@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28C7F1592319153B000B7BF2 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7F1582319153B000B7BF2 /* Transactions.swift */; };
+		28C7F15B2319155B000B7BF2 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7F15A2319155B000B7BF2 /* Block.swift */; };
+		28C7F15D231915EE000B7BF2 /* BlockChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C7F15C231915EE000B7BF2 /* BlockChain.swift */; };
 		28E1A2A22312A30400CF3F5D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E1A2A12312A30400CF3F5D /* main.swift */; };
+		28E1A2AB2312A3CB00CF3F5D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E1A2AA2312A3CB00CF3F5D /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		28C7F1582319153B000B7BF2 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		28C7F15A2319155B000B7BF2 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		28C7F15C231915EE000B7BF2 /* BlockChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChain.swift; sourceTree = "<group>"; };
 		28E1A29E2312A30400CF3F5D /* BlockChain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlockChain; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E1A2A12312A30400CF3F5D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		28E1A2AA2312A3CB00CF3F5D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,29 @@
 		28E1A2A02312A30400CF3F5D /* BlockChain */ = {
 			isa = PBXGroup;
 			children = (
+				28E1A2A82312A3CB00CF3F5D /* BlockChain */,
 				28E1A2A12312A30400CF3F5D /* main.swift */,
 			);
 			path = BlockChain;
+			sourceTree = "<group>";
+		};
+		28E1A2A82312A3CB00CF3F5D /* BlockChain */ = {
+			isa = PBXGroup;
+			children = (
+				28E1A2A92312A3CB00CF3F5D /* 01BlockchainModels */,
+				28E1A2AA2312A3CB00CF3F5D /* main.swift */,
+			);
+			name = BlockChain;
+			sourceTree = "<group>";
+		};
+		28E1A2A92312A3CB00CF3F5D /* 01BlockchainModels */ = {
+			isa = PBXGroup;
+			children = (
+				28C7F1582319153B000B7BF2 /* Transactions.swift */,
+				28C7F15A2319155B000B7BF2 /* Block.swift */,
+				28C7F15C231915EE000B7BF2 /* BlockChain.swift */,
+			);
+			path = 01BlockchainModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E1A2AB2312A3CB00CF3F5D /* main.swift in Sources */,
+				28C7F15B2319155B000B7BF2 /* Block.swift in Sources */,
+				28C7F1592319153B000B7BF2 /* Transactions.swift in Sources */,
+				28C7F15D231915EE000B7BF2 /* BlockChain.swift in Sources */,
 				28E1A2A22312A30400CF3F5D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
