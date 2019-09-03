@@ -15,7 +15,7 @@ class Block{
     var hash : String!
     var nonce : Int
     
-    private (set) var transactions : [Transactions] = [Transactions]()
+    private (set) var transactions : [Transaction] = [Transaction]()
     
     var key : String {
         get{
@@ -27,5 +27,10 @@ class Block{
     
     init() {
         self.nonce = 0
+    }
+    
+    func addTransaction(transaction : Transaction)
+    {
+        transactions.append(transaction)
     }
 }
